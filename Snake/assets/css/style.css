@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+:root {
+    --primary-color: rgb(33, 117, 33);
+}
+
+* {
+    box-sizing: border-box;
+    outline: 0;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-image: URL("../img/COBRAWEB.png");
+    font-family: 'Open sans', sans-serif;
+    font-size: 1em;
+    line-height: 1.2em;
+}
+
+.container {
+    max-width: 620px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 10px;
+    border-radius: 10px;
+}
