@@ -1,3 +1,4 @@
+function main(){
 const canvas = document.getElementById('canvas');
 const ctx = canvas.getContext('2d');
 const fps = 20;
@@ -166,3 +167,5 @@ window.addEventListener('keydown', (e) => {
         }
     }, 1);
 })
+}
+main();
