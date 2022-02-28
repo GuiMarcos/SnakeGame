@@ -1,6 +1,6 @@
 const canvas = document.getElementById('canvas');
 const ctx = canvas.getContext('2d');
-let gameOver = false;
+const fps = 20;
 
 class Snake {
     constructor(x, y, size, color) {
@@ -68,8 +68,10 @@ class Apple {
     }
 }
 let snakeColor = 'rgb(115, 122, 50)';
-let snake = new Snake(100, 100, 20, snakeColor);
+let pieceLenght = 20;
+let snake = new Snake(100, 100, pieceLenght, snakeColor);
 let apple = new Apple();
+let gameOver = false;
 
 window.onload = () => {
     gameLoop();
@@ -77,7 +79,7 @@ window.onload = () => {
 
 
 const gameLoop = () => {
-    setInterval(game, 1000 / 10);
+    setInterval(game, 1000 / fps);
 }
 
 function game() {
